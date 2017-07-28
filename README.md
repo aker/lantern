@@ -1,9 +1,8 @@
-# lantern
-## Use
+## Use Case 1: auto running when docker start
 
-	docker run -itd --restart=always --name lantern -p 3128:3128 lihaixin/lantern
+	docker run -itd --restart=always --name lantern -p 3128:3128 aker/lantern
 	
-## 开机启动，每次都是干净的，防止800M流量后限速
+## Use Case 2: unlimited stream
 
-	docker run --rm --name lantern -p 3128:3128 lihaixin/lantern > ~/lantern.log 2>~/lantern.error
+	docker run --rm --name lantern -p 3128:3128 aker/lantern
 
